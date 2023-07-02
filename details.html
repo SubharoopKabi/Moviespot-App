@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviespot</title>
+    <link rel="icon" href="movieicon.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="global.js" defer></script>
+    <script src="index.js"></script>
+    <script src="details.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="moviespotlogo.jpg" alt="HOME" width="240" height="146">
+
+        </a>
+
+        <div class="search-box" search-box>
+            <div class="search-wrapper" search-wrapper>
+                <input type="text" name="search" aria-label="search movies" placeholder="Search" autocomplete="off"
+                    class="search-field" search-field>
+                <img src="search.png" alt="Search" width="24" height="24" class="leading-icon">
+
+            </div>
+
+            <button class="search-btn" search-toggler>
+                <img src="closeicon.png" alt="close" width="24" height="24">
+            </button>
+        </div>
+
+        <button class="search-btn" search-toggler menu-close>
+            <img src="search.png" alt="menu-close" width="24" height="24" alt="open search box">
+        </button>
+
+        <button class="menu-btn" menu-btn menu-toggler>
+            <img src="menu.png" alt="open menu" width="24" height="24" class="menu">
+            <img src="menu-close.png" alt="close menu" width="24" height="24" class="close">
+        </button>
+    </header>
+
+    <main>
+        <nav class="sidebar" sidebar></nav>
+
+        <div class="overlay" overlay menu-toggler></div>
+
+        <article class="container" page-content></article>
+
+    </main>
+
+    <!-- 1hr28min -->
+
+
+
+
+</body>
+
+</html>
